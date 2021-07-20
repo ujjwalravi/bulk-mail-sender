@@ -1,0 +1,13 @@
+h1 {
+    background-color: #FF449F;
+    color: white;
+}
+
+hr {
+    border: 3px solid lightcoral;
+}
+
+.button {
+    background-color: #FF449F;
+    color: white;
+}

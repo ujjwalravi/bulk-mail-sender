@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bulk Auto Mailer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../static/script.js"></script>
+    <script src="https://kit.fontawesome.com/2c901e3f16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-xxl">
+        <h1 class="display-3 text-center pb-3">Bulk Auto Email Sender</h1>
+        <hr>
+        <form action="/sendmail" method="POST" enctype="multipart/form-data">
+            <div class="mb-3 row">
+                <label for="sendermail" class="col-sm-3 col-form-label">Sender's E-mail</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="sendermail" name="sendermail" placeholder="email@gmail.com">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="senderpass" class="col-sm-3 col-form-label">Sender's Password</label>
+                <div class="col-sm-5">
+                    <input type="password" class="form-control" id="senderpass" name="senderpass" placeholder="******">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="sendersub" class="col-sm-3 col-form-label">E-mail Subject</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="sendersub" name="sendersub" placeholder="E-mail subject here...">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="emailbody" class="col-sm-3 col-form-label">E-mail Body</label>
+                <div class="col-sm-5">
+                    <textarea id="emailbody" name="emailbody" cols="60" rows="8"></textarea>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="csvFile" class="col-sm-3 col-form-label">Upload the E-mail's CSV file</label>
+                <div class="col-sm-5">
+                    <input type="file" name="csvFile" accept=".csv">
+                </div>
+            </div>
+            <input class="button btn" type="submit" value=" SEND MAILS"> <i class="fas fa-spin fa-circle-notch spin"></i>
+        </form>
+        <hr>
+        <footer>
+            <p>Developed by <i>RAVI UJJWAL</i> <a href="https://www.linkedin.com/in/ravi-ujjwal/" target="_blank"><button class="button">Linked In <i class="fab fa-linkedin"></i></button></a> <a href="https://www.instagram.com/raviujjwal2900/" target="_blank"><button class="button">Instagram <i class="fab fa-instagram"></i></button></a></p>
+            <p>Contribute to the code at <a href="https://github.com/ujjwalravi/bulk-email-sender" target="_blank"><button class="button">GitHub <i class="fab fa-github"></i> </button></a></p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </div>
+    </body>
+</html>
